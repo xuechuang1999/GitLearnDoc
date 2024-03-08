@@ -18,5 +18,5 @@ Firstly, you should create a file in the directory of the repository. e.g. you h
     This command is used to add the file `readme.txt` to the repository. After you have added the file to the repository, you can use the following command to check the status of the repository.
 - `git status`
     This command is used to check the status of the repository. It will show you the files that have been modified and the files that have been added to the repository.
-- `git commit -m "wrote a readme file"`
+- `git commit -m "hello git"`
     This command is used to commit the file to the repository. After you have committed the file to the repository, you can use the following command to check the status of the repository.
