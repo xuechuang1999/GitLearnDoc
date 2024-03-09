@@ -68,3 +68,6 @@ In the git version repo, includes a lots of files and directories. And the impor
 - `git restore --staged readme.md`
 
 ## 2.5 delete the file
+If you add and commit a new files `del_test.txt` to git, and you delete the file in the working area, you use the `git status` and know the file is deleted. And now, you have two choices:
+1. `git rm del_test.txt` $\rightarrow$ `git commit -m "delete del_test.txt"`--and the file will be deleted in the version repo.
+2. `git checkout -- del_test.txt`--and the file will be restored in the working area.
