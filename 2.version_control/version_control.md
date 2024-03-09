@@ -55,3 +55,16 @@ In the git version repo, includes a lots of files and directories. And the impor
 `git status`--check the status of the working area and the `repo`.
 ## 2.3 git manage the modification
 :heavy_exclamation_mark: git manage the modification, is not the files.
+- `git diff HEAD -- readme.md`
+    This command is used to check the difference between the working area and the `repo`. It will show you the difference between the two files.
+## 2.4 revise the modification
+1. When you have modified the file in the working area, but you did not `git add xxx` to the `temporary storage area`, and you want to discard the modification,
+- `git status` checkout the status
+    you will find can use the command `git checkout -- readme.md` to discard the modification. :heavy_exclamation_mark: the `--` is necessary, otherwise, it will create a new branch or switch to another branch.
+- `git restore readme.md`
+    you also can use the command `git restore readme.md` to discard the modification.
+2. When you have modified the file in the working area, and you have `git add xxx` to the `temporary storage area`, and you want to discard the modification,
+- `git status` $\rightarrow$ `git reset HEAD readme.md` $\rightarrow$ `git checkout -- readme.md`
+- `git restore --staged readme.md`
+
+## 2.5 delete the file
