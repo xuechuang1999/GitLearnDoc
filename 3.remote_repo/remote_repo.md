@@ -25,3 +25,7 @@ If when you want to delete the remote repository, you can use the following step
 :warning: the delete operation is not a true delte, it just debind the local repository and the remote repository. If you want to delete the remote repository, you can login the github and delete the repository.
 
 ## 3.2 clone from the remote repository
+Firstly, create a new repository on github, and named `GitLearn`, at the same time, create a new file `README.md` in the repository.
+
+- Then use the command `git clone git@github.com:yourname/GitLearn.git`, you will get the `GitLearn` directory in the local. 
+   Of course, you can use the command `git clone https://github.com/yourname/GitLearn.git` to clone the remote repository. But the https way need to input the username and password, and the speed is slower than the ssh way.
